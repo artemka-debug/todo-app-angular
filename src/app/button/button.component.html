@@ -1,0 +1,10 @@
+<button
+  class="btn"
+  (click)="onButtonClick()"
+  [style.backgroundColor]="backgroundColor | cssVariable"
+  [style.color]="textColor"
+  [disabled]="disabled"
+  [type]="type"
+>
+  {{ text }}
+</button>

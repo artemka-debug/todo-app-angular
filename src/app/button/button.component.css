@@ -1,0 +1,21 @@
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn:hover {
+  transform: translate(5px, -5px);
+  box-shadow: -5px 5px 5px #ffea00;
+  animation: transform 1s ease-in;
+}
+
+.btn:active {
+  transform: translate(2px, -2px);
+  box-shadow: -2px 2px 5px #ffea00;
+  opacity: 0.8;
+  animation: opacity 1s ease-in;
+}
+
+

@@ -1,0 +1,35 @@
+<header class="header">
+  <h1>{{ appName }}</h1>
+  <app-button text="Add Todo" (buttonClick)="showFormToggle()"></app-button>
+</header>
+<form
+  *ngIf="showAddTodoForm"
+  class="form"
+  [formGroup]="todoForm"
+  (ngSubmit)="handleAddTodo()"
+>
+  <label>
+    <input
+      class="form-input"
+      type="text"
+      name="title"
+      placeholder="Todo Title"
+      formControlName="title"
+    >
+  </label>
+  <label>
+    <input
+      class="form-input"
+      type="text"
+      name="description"
+      placeholder="Todo Description"
+      formControlName="description"
+    >
+  </label>
+  <div style="width: 100%">
+    <app-button
+      text="Add Todo"
+      type="submit"
+    ></app-button>
+  </div>
+</form>

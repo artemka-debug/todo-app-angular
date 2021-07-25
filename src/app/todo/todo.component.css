@@ -1,0 +1,19 @@
+.todo {
+  margin-top: 10px;
+  border: --border;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo__title {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.todo__actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}

@@ -1,0 +1,19 @@
+<div class="todo" [style.border]="todo.done ? '1px solid green' : '1px solid red'">
+  <div>
+    <h2 class="todo__title">{{ todo.title }}</h2>
+    <div class="todo_description">{{ todo.description }}</div>
+  </div>
+  <div class="todo__actions">
+    <app-button
+      (buttonClick)="deleteTodo()"
+      color="danger"
+      textColor="white"
+      text="Delete"
+    ></app-button>
+    <app-button
+      (buttonClick)="markAsDone()"
+      color="success"
+      [text]="todo.done ? 'Undone' : 'Done'"
+    ></app-button>
+  </div>
+</div>
